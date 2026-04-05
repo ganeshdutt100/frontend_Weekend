@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            width: 300px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .para {
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.404);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            height: 100%;
+            top: 100%;
+            transition: all .5s linear;
+            padding-top: 100px;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+
+        .card:hover .para {
+            top: 0
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="">
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque asperiores voluptatem.
+            Perferendis
+            illo at temporibus vel laborum eum quia consequuntur. Voluptates, qui error! Recusandae doloremque non esse
+            incidunt eligendi.</p>
+    </div>
+</body>
+
+</html>
